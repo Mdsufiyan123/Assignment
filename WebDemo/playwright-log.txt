@@ -1,0 +1,154 @@
+{"level":30,"time":"2024-11-04T07:23:39.817Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Listening on 62548"}
+(node:19896) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-11-04T07:23:40.022Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-11-04T07:23:42.219Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Adding browser to stack: chromium, version: 130.0.6723.31"}
+{"level":30,"time":"2024-11-04T07:23:42.264Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-11-04T07:23:42.264Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-11-04T07:23:42.285Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-11-04T07:23:42.286Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-11-04T07:23:42.287Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Trace file: "}
+{"level":30,"time":"2024-11-04T07:23:42.367Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Changed active context"}
+{"level":30,"time":"2024-11-04T07:23:42.369Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method newContext"}
+{"level":30,"time":"2024-11-04T07:23:42.580Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-11-04T07:23:42.582Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-11-04T07:23:43.953Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Video path: undefined"}
+{"level":30,"time":"2024-11-04T07:23:43.953Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Changed active page"}
+{"level":30,"time":"2024-11-04T07:23:45.222Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method newPage"}
+{"level":30,"time":"2024-11-04T07:23:45.242Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-04T07:23:45.243Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is enabled, find Locator with //summary in page."}
+{"level":30,"time":"2024-11-04T07:23:45.408Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method click"}
+{"level":30,"time":"2024-11-04T07:23:45.418Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method clearText"}
+{"level":30,"time":"2024-11-04T07:23:45.419Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is enabled, find Locator with //textarea[@id='jsondata'] in page."}
+{"level":30,"time":"2024-11-04T07:23:45.459Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method clearText"}
+{"level":30,"time":"2024-11-04T07:23:47.514Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-04T07:23:47.514Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is enabled, find Locator with //textarea[@id='jsondata'] in page."}
+{"level":30,"time":"2024-11-04T07:23:47.552Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-04T07:23:49.587Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-04T07:23:49.587Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is enabled, find Locator with //button[@id='refreshtable'] in page."}
+{"level":30,"time":"2024-11-04T07:23:49.627Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method click"}
+{"level":30,"time":"2024-11-04T07:23:51.653Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getElements"}
+{"level":30,"time":"2024-11-04T07:23:51.653Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is disabled, return Locator: //table[@id='dynamictable']//tr in page."}
+{"level":30,"time":"2024-11-04T07:23:51.653Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2024-11-04T07:23:51.881Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Found 6 elements."}
+{"level":30,"time":"2024-11-04T07:23:51.882Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getElements"}
+{"level":30,"time":"2024-11-04T07:23:51.897Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getElements"}
+{"level":30,"time":"2024-11-04T07:23:51.897Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is disabled, return Locator: //table[@id='dynamictable']//tr >> nth=1 >> td in page."}
+{"level":30,"time":"2024-11-04T07:23:51.897Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2024-11-04T07:23:51.935Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Found 3 elements."}
+{"level":30,"time":"2024-11-04T07:23:51.935Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getElements"}
+{"level":30,"time":"2024-11-04T07:23:51.942Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:51.942Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is enabled, find Locator with //table[@id='dynamictable']//tr >> nth=1 >> td >> nth=0 in page."}
+{"level":30,"time":"2024-11-04T07:23:51.988Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Retrieved text for element //table[@id='dynamictable']//tr >> nth=1 >> td >> nth=0 containing Bob"}
+{"level":30,"time":"2024-11-04T07:23:51.988Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:51.994Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:51.994Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is enabled, find Locator with //table[@id='dynamictable']//tr >> nth=1 >> td >> nth=1 in page."}
+{"level":30,"time":"2024-11-04T07:23:52.021Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Retrieved text for element //table[@id='dynamictable']//tr >> nth=1 >> td >> nth=1 containing 20"}
+{"level":30,"time":"2024-11-04T07:23:52.021Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.028Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.028Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is enabled, find Locator with //table[@id='dynamictable']//tr >> nth=1 >> td >> nth=2 in page."}
+{"level":30,"time":"2024-11-04T07:23:52.053Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Retrieved text for element //table[@id='dynamictable']//tr >> nth=1 >> td >> nth=2 containing male"}
+{"level":30,"time":"2024-11-04T07:23:52.053Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.070Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getElements"}
+{"level":30,"time":"2024-11-04T07:23:52.070Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is disabled, return Locator: //table[@id='dynamictable']//tr >> nth=2 >> td in page."}
+{"level":30,"time":"2024-11-04T07:23:52.070Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2024-11-04T07:23:52.085Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Found 3 elements."}
+{"level":30,"time":"2024-11-04T07:23:52.086Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getElements"}
+{"level":30,"time":"2024-11-04T07:23:52.095Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.095Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is enabled, find Locator with //table[@id='dynamictable']//tr >> nth=2 >> td >> nth=0 in page."}
+{"level":30,"time":"2024-11-04T07:23:52.130Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Retrieved text for element //table[@id='dynamictable']//tr >> nth=2 >> td >> nth=0 containing George"}
+{"level":30,"time":"2024-11-04T07:23:52.130Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.139Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.140Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is enabled, find Locator with //table[@id='dynamictable']//tr >> nth=2 >> td >> nth=1 in page."}
+{"level":30,"time":"2024-11-04T07:23:52.173Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Retrieved text for element //table[@id='dynamictable']//tr >> nth=2 >> td >> nth=1 containing 42"}
+{"level":30,"time":"2024-11-04T07:23:52.173Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.181Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.181Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is enabled, find Locator with //table[@id='dynamictable']//tr >> nth=2 >> td >> nth=2 in page."}
+{"level":30,"time":"2024-11-04T07:23:52.214Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Retrieved text for element //table[@id='dynamictable']//tr >> nth=2 >> td >> nth=2 containing male"}
+{"level":30,"time":"2024-11-04T07:23:52.214Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.243Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getElements"}
+{"level":30,"time":"2024-11-04T07:23:52.243Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is disabled, return Locator: //table[@id='dynamictable']//tr >> nth=3 >> td in page."}
+{"level":30,"time":"2024-11-04T07:23:52.243Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2024-11-04T07:23:52.261Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Found 3 elements."}
+{"level":30,"time":"2024-11-04T07:23:52.262Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getElements"}
+{"level":30,"time":"2024-11-04T07:23:52.274Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.274Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is enabled, find Locator with //table[@id='dynamictable']//tr >> nth=3 >> td >> nth=0 in page."}
+{"level":30,"time":"2024-11-04T07:23:52.310Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Retrieved text for element //table[@id='dynamictable']//tr >> nth=3 >> td >> nth=0 containing Sara"}
+{"level":30,"time":"2024-11-04T07:23:52.310Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.319Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.319Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is enabled, find Locator with //table[@id='dynamictable']//tr >> nth=3 >> td >> nth=1 in page."}
+{"level":30,"time":"2024-11-04T07:23:52.349Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Retrieved text for element //table[@id='dynamictable']//tr >> nth=3 >> td >> nth=1 containing 42"}
+{"level":30,"time":"2024-11-04T07:23:52.349Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.357Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.358Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is enabled, find Locator with //table[@id='dynamictable']//tr >> nth=3 >> td >> nth=2 in page."}
+{"level":30,"time":"2024-11-04T07:23:52.388Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Retrieved text for element //table[@id='dynamictable']//tr >> nth=3 >> td >> nth=2 containing female"}
+{"level":30,"time":"2024-11-04T07:23:52.388Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.410Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getElements"}
+{"level":30,"time":"2024-11-04T07:23:52.410Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is disabled, return Locator: //table[@id='dynamictable']//tr >> nth=4 >> td in page."}
+{"level":30,"time":"2024-11-04T07:23:52.410Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2024-11-04T07:23:52.436Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Found 3 elements."}
+{"level":30,"time":"2024-11-04T07:23:52.437Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getElements"}
+{"level":30,"time":"2024-11-04T07:23:52.447Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.447Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is enabled, find Locator with //table[@id='dynamictable']//tr >> nth=4 >> td >> nth=0 in page."}
+{"level":30,"time":"2024-11-04T07:23:52.493Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Retrieved text for element //table[@id='dynamictable']//tr >> nth=4 >> td >> nth=0 containing Conor"}
+{"level":30,"time":"2024-11-04T07:23:52.493Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.505Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.505Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is enabled, find Locator with //table[@id='dynamictable']//tr >> nth=4 >> td >> nth=1 in page."}
+{"level":30,"time":"2024-11-04T07:23:52.551Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Retrieved text for element //table[@id='dynamictable']//tr >> nth=4 >> td >> nth=1 containing 40"}
+{"level":30,"time":"2024-11-04T07:23:52.551Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.564Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.564Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is enabled, find Locator with //table[@id='dynamictable']//tr >> nth=4 >> td >> nth=2 in page."}
+{"level":30,"time":"2024-11-04T07:23:52.626Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Retrieved text for element //table[@id='dynamictable']//tr >> nth=4 >> td >> nth=2 containing male"}
+{"level":30,"time":"2024-11-04T07:23:52.626Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.664Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getElements"}
+{"level":30,"time":"2024-11-04T07:23:52.664Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is disabled, return Locator: //table[@id='dynamictable']//tr >> nth=5 >> td in page."}
+{"level":30,"time":"2024-11-04T07:23:52.665Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2024-11-04T07:23:52.682Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Found 3 elements."}
+{"level":30,"time":"2024-11-04T07:23:52.683Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getElements"}
+{"level":30,"time":"2024-11-04T07:23:52.697Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.697Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is enabled, find Locator with //table[@id='dynamictable']//tr >> nth=5 >> td >> nth=0 in page."}
+{"level":30,"time":"2024-11-04T07:23:52.740Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Retrieved text for element //table[@id='dynamictable']//tr >> nth=5 >> td >> nth=0 containing Jennifer"}
+{"level":30,"time":"2024-11-04T07:23:52.740Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.752Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.753Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is enabled, find Locator with //table[@id='dynamictable']//tr >> nth=5 >> td >> nth=1 in page."}
+{"level":30,"time":"2024-11-04T07:23:52.796Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Retrieved text for element //table[@id='dynamictable']//tr >> nth=5 >> td >> nth=1 containing 42"}
+{"level":30,"time":"2024-11-04T07:23:52.796Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.809Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.810Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Strict mode is enabled, find Locator with //table[@id='dynamictable']//tr >> nth=5 >> td >> nth=2 in page."}
+{"level":30,"time":"2024-11-04T07:23:52.854Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-04T07:23:52.854Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Retrieved text for element //table[@id='dynamictable']//tr >> nth=5 >> td >> nth=2 containing female"}
+{"level":30,"time":"2024-11-04T07:23:52.898Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-11-04T07:23:52.977Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Removed page=7df71a41-6325-42e7-97d2-6468aa91d08d from context=42d0dc5b-20f8-4cea-9c26-0b6b230c7f33 page stack"}
+{"level":30,"time":"2024-11-04T07:23:54.563Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\python 3.9\lib\site-packages\Browser\wrapper\index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (C:\python 3.9\lib\site-packages\Browser\wrapper\index.js:11598:59)
+    at PlaywrightServer.setTimeout (C:\python 3.9\lib\site-packages\Browser\wrapper\index.js:11837:57)
+    at Object.onReceiveHalfClose (C:\python 3.9\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\python 3.9\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\python 3.9\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\python 3.9\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2024-11-04T07:23:54.686Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-04T07:23:54.687Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\python 3.9\lib\site-packages\Browser\wrapper\index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (C:\python 3.9\lib\site-packages\Browser\wrapper\index.js:11598:59)
+    at PlaywrightServer.setTimeout (C:\python 3.9\lib\site-packages\Browser\wrapper\index.js:11837:57)
+    at Object.onReceiveHalfClose (C:\python 3.9\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\python 3.9\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\python 3.9\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\python 3.9\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2024-11-04T07:23:54.760Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-04T07:23:54.761Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-04T07:23:56.984Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-11-04T07:23:56.984Z","pid":19896,"hostname":"LAPTOP-4I47KVM9","msg":"End of node method closeAllBrowsers"}

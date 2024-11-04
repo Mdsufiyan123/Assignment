@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.1 on win32)" generated="20241104 12:53:36.630" rpa="false" schemaversion="3">
+<suite id="s1" name="CAWStudios" source="c:\RobotFramework\WebDemo\login_tests\CAWStudios.robot">
+<test id="s1-t1" name="Dynamic Table Automation Test" line="18">
+<kw name="Open Browser" library="Browser">
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<msg timestamp="20241104 12:53:37.452" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg timestamp="20241104 12:53:37.456" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\RobotFramework\\WebDemo\\browser\\traces\\682c3f80-52b9-4958-9361-a5c5f4c84385"}</msg>
+<msg timestamp="20241104 12:53:37.882" level="INFO">Starting Browser process C:\python 3.9\lib\site-packages\Browser\wrapper\index.js using port 62548</msg>
+<msg timestamp="20241104 12:53:37.882" level="INFO">Node startup parameters: ['node', 'C:\\python 3.9\\lib\\site-packages\\Browser\\wrapper\\index.js', '62548']</msg>
+<msg timestamp="20241104 12:53:42.270" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\RobotFramework\\WebDemo\\browser\\traces\\682c3f80-52b9-4958-9361-a5c5f4c84385"}</msg>
+<msg timestamp="20241104 12:53:42.272" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg timestamp="20241104 12:53:42.570" level="INFO">Successfully created context. </msg>
+<msg timestamp="20241104 12:53:42.571" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg timestamp="20241104 12:53:45.229" level="INFO">Successfully initialized new page object and opened url: https://testpages.herokuapp.com/styled/tag/dynamic-table.html</msg>
+<status status="PASS" starttime="20241104 12:53:37.449" endtime="20241104 12:53:45.230"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${tableDatPath}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<msg timestamp="20241104 12:53:45.235" level="INFO">Clicks the element '//summary'.</msg>
+<status status="PASS" starttime="20241104 12:53:45.233" endtime="20241104 12:53:45.412"/>
+</kw>
+<kw name="Clear Text" library="Browser">
+<arg>${jsonDataInputBox}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears the text field found by ``selector``.</doc>
+<status status="PASS" starttime="20241104 12:53:45.413" endtime="20241104 12:53:45.463"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${DELAY}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241104 12:53:47.475" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20241104 12:53:45.464" endtime="20241104 12:53:47.475"/>
+</kw>
+<kw name="Get Test Data From Json File">
+<var>${expected_data}</var>
+<arg>${JSON_FILE}</arg>
+<kw name="Load Json From File" library="JSONLibrary">
+<var>${test_data}</var>
+<arg>${json_file}</arg>
+<doc>Load JSON from file.</doc>
+<msg timestamp="20241104 12:53:47.475" level="INFO">${test_data} = [{'name': 'Bob', 'age': 20, 'gender': 'male'}, {'name': 'George', 'age': 42, 'gender': 'male'}, {'name': 'Sara', 'age': 42, 'gender': 'female'}, {'name': 'Conor', 'age': 40, 'gender': 'male'}, {'name'...</msg>
+<status status="PASS" starttime="20241104 12:53:47.475" endtime="20241104 12:53:47.475"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Loaded data from JSON file: ${test_data}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20241104 12:53:47.475" level="INFO">Loaded data from JSON file: [{'name': 'Bob', 'age': 20, 'gender': 'male'}, {'name': 'George', 'age': 42, 'gender': 'male'}, {'name': 'Sara', 'age': 42, 'gender': 'female'}, {'name': 'Conor', 'age': 40, 'gender': 'male'}, {'name': 'Jennifer', 'age': 42, 'gender': 'female'}]</msg>
+<status status="PASS" starttime="20241104 12:53:47.475" endtime="20241104 12:53:47.475"/>
+</kw>
+<msg timestamp="20241104 12:53:47.491" level="INFO">${expected_data} = [{'name': 'Bob', 'age': 20, 'gender': 'male'}, {'name': 'George', 'age': 42, 'gender': 'male'}, {'name': 'Sara', 'age': 42, 'gender': 'female'}, {'name': 'Conor', 'age': 40, 'gender': 'male'}, {'name'...</msg>
+<status status="PASS" starttime="20241104 12:53:47.475" endtime="20241104 12:53:47.491"/>
+</kw>
+<kw name="Insert Data Into Text Box">
+<arg>${expected_data}</arg>
+<kw name="Convert List of Dictionaries to JSON String">
+<var>${json_string}</var>
+<arg>${data}</arg>
+<kw name="Evaluate" library="BuiltIn">
+<var>${json_string}</var>
+<arg>json.dumps(${data_list})</arg>
+<arg>json</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20241104 12:53:47.491" level="INFO">${json_string} = [{"name": "Bob", "age": 20, "gender": "male"}, {"name": "George", "age": 42, "gender": "male"}, {"name": "Sara", "age": 42, "gender": "female"}, {"name": "Conor", "age": 40, "gender": "male"}, {"name"...</msg>
+<status status="PASS" starttime="20241104 12:53:47.491" endtime="20241104 12:53:47.491"/>
+</kw>
+<msg timestamp="20241104 12:53:47.491" level="INFO">${json_string} = [{"name": "Bob", "age": 20, "gender": "male"}, {"name": "George", "age": 42, "gender": "male"}, {"name": "Sara", "age": 42, "gender": "female"}, {"name": "Conor", "age": 40, "gender": "male"}, {"name"...</msg>
+<status status="PASS" starttime="20241104 12:53:47.491" endtime="20241104 12:53:47.491"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>${jsonDataInputBox}</arg>
+<arg>${json_string}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20241104 12:53:47.507" level="INFO">Fills the text '[{"name": "Bob", "age": 20, "gender": "male"}, {"name": "George", "age": 42, "gender": "male"}, {"name": "Sara", "age": 42, "gender": "female"}, {"name": "Conor", "age": 40, "gender": "male"}, {"name": "Jennifer", "age": 42, "gender": "female"}]' in the given field.</msg>
+<status status="PASS" starttime="20241104 12:53:47.491" endtime="20241104 12:53:47.560"/>
+</kw>
+<status status="PASS" starttime="20241104 12:53:47.491" endtime="20241104 12:53:47.560"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${DELAY}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241104 12:53:49.581" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20241104 12:53:47.566" endtime="20241104 12:53:49.581"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${refreshTable}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<msg timestamp="20241104 12:53:49.583" level="INFO">Clicks the element '//button[@id='refreshtable']'.</msg>
+<status status="PASS" starttime="20241104 12:53:49.582" endtime="20241104 12:53:49.632"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${DELAY}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241104 12:53:51.643" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20241104 12:53:49.633" endtime="20241104 12:53:51.643"/>
+</kw>
+<kw name="Assert Table Data Matches">
+<arg>${expected_data}</arg>
+<kw name="Get Elements" library="Browser">
+<var>${actual_rows}</var>
+<arg>${tableData}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<msg timestamp="20241104 12:53:51.876" level="INFO">Found locator('//table[@id=\'dynamictable\']//tr').first(),locator('//table[@id=\'dynamictable\']//tr').nth(1),locator('//table[@id=\'dynamictable\']//tr').nth(2),locator('//table[@id=\'dynamictable\']//tr').nth(3),locator('//table[@id=\'dynamictable\']//tr').nth(4),locator('//table[@id=\'dynamictable\']//tr').nth(5) Locators successfully.</msg>
+<msg timestamp="20241104 12:53:51.876" level="INFO">${actual_rows} = ["//table[@id='dynamictable']//tr &gt;&gt; nth=0", "//table[@id='dynamictable']//tr &gt;&gt; nth=1", "//table[@id='dynamictable']//tr &gt;&gt; nth=2", "//table[@id='dynamictable']//tr &gt;&gt; nth=3", "//table[@id='dynamicta...</msg>
+<status status="PASS" starttime="20241104 12:53:51.643" endtime="20241104 12:53:51.876"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${row_count}</var>
+<arg>${actual_rows}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20241104 12:53:51.876" level="INFO">Length is 6</msg>
+<msg timestamp="20241104 12:53:51.876" level="INFO">${row_count} = 6</msg>
+<status status="PASS" starttime="20241104 12:53:51.876" endtime="20241104 12:53:51.876"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${index}</var>
+<value>1</value>
+<value>${row_count}</value>
+<iter>
+<var name="${index}">1</var>
+<kw name="Get From List" library="Collections">
+<var>${row}</var>
+<arg>${actual_rows}</arg>
+<arg>${index}</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<msg timestamp="20241104 12:53:51.892" level="INFO">${row} = //table[@id='dynamictable']//tr &gt;&gt; nth=1</msg>
+<status status="PASS" starttime="20241104 12:53:51.876" endtime="20241104 12:53:51.892"/>
+</kw>
+<kw name="Get Elements" library="Browser">
+<var>${columns}</var>
+<arg>${row} &gt;&gt; td</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<msg timestamp="20241104 12:53:51.936" level="INFO">Found locator('//table[@id=\'dynamictable\']//tr').nth(1).locator('td').first(),locator('//table[@id=\'dynamictable\']//tr').nth(1).locator('td').nth(1),locator('//table[@id=\'dynamictable\']//tr').nth(1).locator('td').nth(2) Locators successfully.</msg>
+<msg timestamp="20241104 12:53:51.936" level="INFO">${columns} = ["//table[@id='dynamictable']//tr &gt;&gt; nth=1 &gt;&gt; td &gt;&gt; nth=0", "//table[@id='dynamictable']//tr &gt;&gt; nth=1 &gt;&gt; td &gt;&gt; nth=1", "//table[@id='dynamictable']//tr &gt;&gt; nth=1 &gt;&gt; td &gt;&gt; nth=2"]</msg>
+<status status="PASS" starttime="20241104 12:53:51.892" endtime="20241104 12:53:51.936"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${actual_name}</var>
+<arg>${columns}[0]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20241104 12:53:51.984" level="INFO">Text: 'Bob'</msg>
+<msg timestamp="20241104 12:53:51.984" level="INFO">${actual_name} = Bob</msg>
+<status status="PASS" starttime="20241104 12:53:51.936" endtime="20241104 12:53:51.984"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${actual_age}</var>
+<arg>${columns}[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20241104 12:53:52.019" level="INFO">Text: '20'</msg>
+<msg timestamp="20241104 12:53:52.019" level="INFO">${actual_age} = 20</msg>
+<status status="PASS" starttime="20241104 12:53:51.984" endtime="20241104 12:53:52.019"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${actual_gender}</var>
+<arg>${columns}[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20241104 12:53:52.052" level="INFO">Text: 'male'</msg>
+<msg timestamp="20241104 12:53:52.052" level="INFO">${actual_gender} = male</msg>
+<status status="PASS" starttime="20241104 12:53:52.019" endtime="20241104 12:53:52.052"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${expected_index}</var>
+<arg>${index} - 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20241104 12:53:52.052" level="INFO">${expected_index} = 0</msg>
+<status status="PASS" starttime="20241104 12:53:52.052" endtime="20241104 12:53:52.052"/>
+</kw>
+<kw name="Get From List" library="Collections">
+<var>${expected_entry}</var>
+<arg>${expected_data}</arg>
+<arg>${expected_index}</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<msg timestamp="20241104 12:53:52.052" level="INFO">${expected_entry} = {'name': 'Bob', 'age': 20, 'gender': 'male'}</msg>
+<status status="PASS" starttime="20241104 12:53:52.052" endtime="20241104 12:53:52.052"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${actual_name}</arg>
+<arg>${expected_entry['name']}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20241104 12:53:52.052" endtime="20241104 12:53:52.052"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${actual_age}</arg>
+<arg>${expected_entry['age']}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<msg timestamp="20241104 12:53:52.052" level="INFO">Argument types are:
+&lt;class 'str'&gt;
+&lt;class 'int'&gt;</msg>
+<status status="PASS" starttime="20241104 12:53:52.052" endtime="20241104 12:53:52.052"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${actual_gender}</arg>
+<arg>${expected_entry['gender']}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20241104 12:53:52.052" endtime="20241104 12:53:52.052"/>
+</kw>
+<status status="PASS" starttime="20241104 12:53:51.876" endtime="20241104 12:53:52.052"/>
+</iter>
+<iter>
+<var name="${index}">2</var>
+<kw name="Get From List" library="Collections">
+<var>${row}</var>
+<arg>${actual_rows}</arg>
+<arg>${index}</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<msg timestamp="20241104 12:53:52.052" level="INFO">${row} = //table[@id='dynamictable']//tr &gt;&gt; nth=2</msg>
+<status status="PASS" starttime="20241104 12:53:52.052" endtime="20241104 12:53:52.052"/>
+</kw>
+<kw name="Get Elements" library="Browser">
+<var>${columns}</var>
+<arg>${row} &gt;&gt; td</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<msg timestamp="20241104 12:53:52.088" level="INFO">Found locator('//table[@id=\'dynamictable\']//tr').nth(2).locator('td').first(),locator('//table[@id=\'dynamictable\']//tr').nth(2).locator('td').nth(1),locator('//table[@id=\'dynamictable\']//tr').nth(2).locator('td').nth(2) Locators successfully.</msg>
+<msg timestamp="20241104 12:53:52.089" level="INFO">${columns} = ["//table[@id='dynamictable']//tr &gt;&gt; nth=2 &gt;&gt; td &gt;&gt; nth=0", "//table[@id='dynamictable']//tr &gt;&gt; nth=2 &gt;&gt; td &gt;&gt; nth=1", "//table[@id='dynamictable']//tr &gt;&gt; nth=2 &gt;&gt; td &gt;&gt; nth=2"]</msg>
+<status status="PASS" starttime="20241104 12:53:52.052" endtime="20241104 12:53:52.089"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${actual_name}</var>
+<arg>${columns}[0]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20241104 12:53:52.122" level="INFO">Text: 'George'</msg>
+<msg timestamp="20241104 12:53:52.122" level="INFO">${actual_name} = George</msg>
+<status status="PASS" starttime="20241104 12:53:52.091" endtime="20241104 12:53:52.122"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${actual_age}</var>
+<arg>${columns}[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20241104 12:53:52.169" level="INFO">Text: '42'</msg>
+<msg timestamp="20241104 12:53:52.169" level="INFO">${actual_age} = 42</msg>
+<status status="PASS" starttime="20241104 12:53:52.135" endtime="20241104 12:53:52.169"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${actual_gender}</var>
+<arg>${columns}[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20241104 12:53:52.212" level="INFO">Text: 'male'</msg>
+<msg timestamp="20241104 12:53:52.212" level="INFO">${actual_gender} = male</msg>
+<status status="PASS" starttime="20241104 12:53:52.169" endtime="20241104 12:53:52.219"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${expected_index}</var>
+<arg>${index} - 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20241104 12:53:52.219" level="INFO">${expected_index} = 1</msg>
+<status status="PASS" starttime="20241104 12:53:52.219" endtime="20241104 12:53:52.219"/>
+</kw>
+<kw name="Get From List" library="Collections">
+<var>${expected_entry}</var>
+<arg>${expected_data}</arg>
+<arg>${expected_index}</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<msg timestamp="20241104 12:53:52.219" level="INFO">${expected_entry} = {'name': 'George', 'age': 42, 'gender': 'male'}</msg>
+<status status="PASS" starttime="20241104 12:53:52.219" endtime="20241104 12:53:52.219"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${actual_name}</arg>
+<arg>${expected_entry['name']}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20241104 12:53:52.219" endtime="20241104 12:53:52.219"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${actual_age}</arg>
+<arg>${expected_entry['age']}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<msg timestamp="20241104 12:53:52.219" level="INFO">Argument types are:
+&lt;class 'str'&gt;
+&lt;class 'int'&gt;</msg>
+<status status="PASS" starttime="20241104 12:53:52.219" endtime="20241104 12:53:52.219"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${actual_gender}</arg>
+<arg>${expected_entry['gender']}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20241104 12:53:52.219" endtime="20241104 12:53:52.219"/>
+</kw>
+<status status="PASS" starttime="20241104 12:53:52.052" endtime="20241104 12:53:52.235"/>
+</iter>
+<iter>
+<var name="${index}">3</var>
+<kw name="Get From List" library="Collections">
+<var>${row}</var>
+<arg>${actual_rows}</arg>
+<arg>${index}</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<msg timestamp="20241104 12:53:52.235" level="INFO">${row} = //table[@id='dynamictable']//tr &gt;&gt; nth=3</msg>
+<status status="PASS" starttime="20241104 12:53:52.235" endtime="20241104 12:53:52.235"/>
+</kw>
+<kw name="Get Elements" library="Browser">
+<var>${columns}</var>
+<arg>${row} &gt;&gt; td</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<msg timestamp="20241104 12:53:52.256" level="INFO">Found locator('//table[@id=\'dynamictable\']//tr').nth(3).locator('td').first(),locator('//table[@id=\'dynamictable\']//tr').nth(3).locator('td').nth(1),locator('//table[@id=\'dynamictable\']//tr').nth(3).locator('td').nth(2) Locators successfully.</msg>
+<msg timestamp="20241104 12:53:52.256" level="INFO">${columns} = ["//table[@id='dynamictable']//tr &gt;&gt; nth=3 &gt;&gt; td &gt;&gt; nth=0", "//table[@id='dynamictable']//tr &gt;&gt; nth=3 &gt;&gt; td &gt;&gt; nth=1", "//table[@id='dynamictable']//tr &gt;&gt; nth=3 &gt;&gt; td &gt;&gt; nth=2"]</msg>
+<status status="PASS" starttime="20241104 12:53:52.235" endtime="20241104 12:53:52.256"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${actual_name}</var>
+<arg>${columns}[0]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20241104 12:53:52.313" level="INFO">Text: 'Sara'</msg>
+<msg timestamp="20241104 12:53:52.313" level="INFO">${actual_name} = Sara</msg>
+<status status="PASS" starttime="20241104 12:53:52.269" endtime="20241104 12:53:52.313"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${actual_age}</var>
+<arg>${columns}[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20241104 12:53:52.351" level="INFO">Text: '42'</msg>
+<msg timestamp="20241104 12:53:52.351" level="INFO">${actual_age} = 42</msg>
+<status status="PASS" starttime="20241104 12:53:52.313" endtime="20241104 12:53:52.351"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${actual_gender}</var>
+<arg>${columns}[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20241104 12:53:52.385" level="INFO">Text: 'female'</msg>
+<msg timestamp="20241104 12:53:52.385" level="INFO">${actual_gender} = female</msg>
+<status status="PASS" starttime="20241104 12:53:52.351" endtime="20241104 12:53:52.385"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${expected_index}</var>
+<arg>${index} - 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20241104 12:53:52.385" level="INFO">${expected_index} = 2</msg>
+<status status="PASS" starttime="20241104 12:53:52.385" endtime="20241104 12:53:52.385"/>
+</kw>
+<kw name="Get From List" library="Collections">
+<var>${expected_entry}</var>
+<arg>${expected_data}</arg>
+<arg>${expected_index}</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<msg timestamp="20241104 12:53:52.385" level="INFO">${expected_entry} = {'name': 'Sara', 'age': 42, 'gender': 'female'}</msg>
+<status status="PASS" starttime="20241104 12:53:52.385" endtime="20241104 12:53:52.385"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${actual_name}</arg>
+<arg>${expected_entry['name']}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20241104 12:53:52.385" endtime="20241104 12:53:52.385"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${actual_age}</arg>
+<arg>${expected_entry['age']}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<msg timestamp="20241104 12:53:52.385" level="INFO">Argument types are:
+&lt;class 'str'&gt;
+&lt;class 'int'&gt;</msg>
+<status status="PASS" starttime="20241104 12:53:52.385" endtime="20241104 12:53:52.385"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${actual_gender}</arg>
+<arg>${expected_entry['gender']}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20241104 12:53:52.385" endtime="20241104 12:53:52.401"/>
+</kw>
+<status status="PASS" starttime="20241104 12:53:52.235" endtime="20241104 12:53:52.401"/>
+</iter>
+<iter>
+<var name="${index}">4</var>
+<kw name="Get From List" library="Collections">
+<var>${row}</var>
+<arg>${actual_rows}</arg>
+<arg>${index}</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<msg timestamp="20241104 12:53:52.401" level="INFO">${row} = //table[@id='dynamictable']//tr &gt;&gt; nth=4</msg>
+<status status="PASS" starttime="20241104 12:53:52.401" endtime="20241104 12:53:52.401"/>
+</kw>
+<kw name="Get Elements" library="Browser">
+<var>${columns}</var>
+<arg>${row} &gt;&gt; td</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<msg timestamp="20241104 12:53:52.439" level="INFO">Found locator('//table[@id=\'dynamictable\']//tr').nth(4).locator('td').first(),locator('//table[@id=\'dynamictable\']//tr').nth(4).locator('td').nth(1),locator('//table[@id=\'dynamictable\']//tr').nth(4).locator('td').nth(2) Locators successfully.</msg>
+<msg timestamp="20241104 12:53:52.440" level="INFO">${columns} = ["//table[@id='dynamictable']//tr &gt;&gt; nth=4 &gt;&gt; td &gt;&gt; nth=0", "//table[@id='dynamictable']//tr &gt;&gt; nth=4 &gt;&gt; td &gt;&gt; nth=1", "//table[@id='dynamictable']//tr &gt;&gt; nth=4 &gt;&gt; td &gt;&gt; nth=2"]</msg>
+<status status="PASS" starttime="20241104 12:53:52.401" endtime="20241104 12:53:52.441"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${actual_name}</var>
+<arg>${columns}[0]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20241104 12:53:52.487" level="INFO">Text: 'Conor'</msg>
+<msg timestamp="20241104 12:53:52.487" level="INFO">${actual_name} = Conor</msg>
+<status status="PASS" starttime="20241104 12:53:52.441" endtime="20241104 12:53:52.487"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${actual_age}</var>
+<arg>${columns}[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20241104 12:53:52.553" level="INFO">Text: '40'</msg>
+<msg timestamp="20241104 12:53:52.553" level="INFO">${actual_age} = 40</msg>
+<status status="PASS" starttime="20241104 12:53:52.487" endtime="20241104 12:53:52.553"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${actual_gender}</var>
+<arg>${columns}[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20241104 12:53:52.620" level="INFO">Text: 'male'</msg>
+<msg timestamp="20241104 12:53:52.620" level="INFO">${actual_gender} = male</msg>
+<status status="PASS" starttime="20241104 12:53:52.553" endtime="20241104 12:53:52.620"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${expected_index}</var>
+<arg>${index} - 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20241104 12:53:52.634" level="INFO">${expected_index} = 3</msg>
+<status status="PASS" starttime="20241104 12:53:52.620" endtime="20241104 12:53:52.634"/>
+</kw>
+<kw name="Get From List" library="Collections">
+<var>${expected_entry}</var>
+<arg>${expected_data}</arg>
+<arg>${expected_index}</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<msg timestamp="20241104 12:53:52.637" level="INFO">${expected_entry} = {'name': 'Conor', 'age': 40, 'gender': 'male'}</msg>
+<status status="PASS" starttime="20241104 12:53:52.636" endtime="20241104 12:53:52.637"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${actual_name}</arg>
+<arg>${expected_entry['name']}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20241104 12:53:52.637" endtime="20241104 12:53:52.637"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${actual_age}</arg>
+<arg>${expected_entry['age']}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<msg timestamp="20241104 12:53:52.637" level="INFO">Argument types are:
+&lt;class 'str'&gt;
+&lt;class 'int'&gt;</msg>
+<status status="PASS" starttime="20241104 12:53:52.637" endtime="20241104 12:53:52.637"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${actual_gender}</arg>
+<arg>${expected_entry['gender']}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20241104 12:53:52.637" endtime="20241104 12:53:52.652"/>
+</kw>
+<status status="PASS" starttime="20241104 12:53:52.401" endtime="20241104 12:53:52.652"/>
+</iter>
+<iter>
+<var name="${index}">5</var>
+<kw name="Get From List" library="Collections">
+<var>${row}</var>
+<arg>${actual_rows}</arg>
+<arg>${index}</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<msg timestamp="20241104 12:53:52.652" level="INFO">${row} = //table[@id='dynamictable']//tr &gt;&gt; nth=5</msg>
+<status status="PASS" starttime="20241104 12:53:52.652" endtime="20241104 12:53:52.652"/>
+</kw>
+<kw name="Get Elements" library="Browser">
+<var>${columns}</var>
+<arg>${row} &gt;&gt; td</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<msg timestamp="20241104 12:53:52.687" level="INFO">Found locator('//table[@id=\'dynamictable\']//tr').nth(5).locator('td').first(),locator('//table[@id=\'dynamictable\']//tr').nth(5).locator('td').nth(1),locator('//table[@id=\'dynamictable\']//tr').nth(5).locator('td').nth(2) Locators successfully.</msg>
+<msg timestamp="20241104 12:53:52.688" level="INFO">${columns} = ["//table[@id='dynamictable']//tr &gt;&gt; nth=5 &gt;&gt; td &gt;&gt; nth=0", "//table[@id='dynamictable']//tr &gt;&gt; nth=5 &gt;&gt; td &gt;&gt; nth=1", "//table[@id='dynamictable']//tr &gt;&gt; nth=5 &gt;&gt; td &gt;&gt; nth=2"]</msg>
+<status status="PASS" starttime="20241104 12:53:52.652" endtime="20241104 12:53:52.689"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${actual_name}</var>
+<arg>${columns}[0]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20241104 12:53:52.743" level="INFO">Text: 'Jennifer'</msg>
+<msg timestamp="20241104 12:53:52.744" level="INFO">${actual_name} = Jennifer</msg>
+<status status="PASS" starttime="20241104 12:53:52.690" endtime="20241104 12:53:52.745"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${actual_age}</var>
+<arg>${columns}[1]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20241104 12:53:52.799" level="INFO">Text: '42'</msg>
+<msg timestamp="20241104 12:53:52.800" level="INFO">${actual_age} = 42</msg>
+<status status="PASS" starttime="20241104 12:53:52.746" endtime="20241104 12:53:52.801"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${actual_gender}</var>
+<arg>${columns}[2]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20241104 12:53:52.857" level="INFO">Text: 'female'</msg>
+<msg timestamp="20241104 12:53:52.858" level="INFO">${actual_gender} = female</msg>
+<status status="PASS" starttime="20241104 12:53:52.803" endtime="20241104 12:53:52.859"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${expected_index}</var>
+<arg>${index} - 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20241104 12:53:52.862" level="INFO">${expected_index} = 4</msg>
+<status status="PASS" starttime="20241104 12:53:52.860" endtime="20241104 12:53:52.863"/>
+</kw>
+<kw name="Get From List" library="Collections">
+<var>${expected_entry}</var>
+<arg>${expected_data}</arg>
+<arg>${expected_index}</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<msg timestamp="20241104 12:53:52.866" level="INFO">${expected_entry} = {'name': 'Jennifer', 'age': 42, 'gender': 'female'}</msg>
+<status status="PASS" starttime="20241104 12:53:52.864" endtime="20241104 12:53:52.867"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${actual_name}</arg>
+<arg>${expected_entry['name']}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20241104 12:53:52.869" endtime="20241104 12:53:52.873"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${actual_age}</arg>
+<arg>${expected_entry['age']}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<msg timestamp="20241104 12:53:52.877" level="INFO">Argument types are:
+&lt;class 'str'&gt;
+&lt;class 'int'&gt;</msg>
+<status status="PASS" starttime="20241104 12:53:52.874" endtime="20241104 12:53:52.877"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${actual_gender}</arg>
+<arg>${expected_entry['gender']}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20241104 12:53:52.878" endtime="20241104 12:53:52.881"/>
+</kw>
+<status status="PASS" starttime="20241104 12:53:52.652" endtime="20241104 12:53:52.881"/>
+</iter>
+<status status="PASS" starttime="20241104 12:53:51.876" endtime="20241104 12:53:52.882"/>
+</for>
+<status status="PASS" starttime="20241104 12:53:51.643" endtime="20241104 12:53:52.882"/>
+</kw>
+<kw name="Close Browser" library="Browser" type="TEARDOWN">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<msg timestamp="20241104 12:53:54.568" level="INFO">Closed browser</msg>
+<status status="PASS" starttime="20241104 12:53:52.885" endtime="20241104 12:53:54.570"/>
+</kw>
+<doc>Test the dynamic table functionality with provided data.</doc>
+<status status="PASS" starttime="20241104 12:53:37.445" endtime="20241104 12:53:54.572"/>
+</test>
+<status status="PASS" starttime="20241104 12:53:36.642" endtime="20241104 12:53:54.683"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="CAWStudios">CAWStudios</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20241104 12:53:37.452" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+</errors>
+</robot>
